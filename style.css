@@ -1,3 +1,18 @@
-.card {
+#formacoes .card {
     border-radius: 30px !important;
+}
+
+a {
+    outline: none !important;
+}
+
+
+a:focus {
+    outline: 2px solid #007bff !important;
+    /* Personalize a cor e a espessura da outline */
+}
+
+a:hover {
+    outline: none !important;
+    /* Remove a outline apenas quando o mouse estiver sobre o link */
 }
