@@ -1,10 +1,10 @@
 <?php
 
 // Passando os dados obtidos pelo formulário para as variáveis abaixo
-$nomeremetente     = $_POST['nome'];
-$emailremetente    = trim($_POST['email']);
+$nomeremetente     = filter_input(INPUT_POST, "nome", FILTER_SANITIZE_SPECIAL_CHARS);
+$emailremetente    = trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL, FILTER_SANITIZE_SPECIAL_CHARS));
 $emaildestinatario = 'profissionalmurillogomes@gmail.com'; // Digite seu e-mail aqui, lembrando que o e-mail deve estar em seu servidor web
-$mensagem             = $_POST['mensagem'];
+$mensagem             = filter_input(INPUT_POST, "MENSAGEM", FILTER_SANITIZE_SPECIAL_CHARS);
 
 
 /* Mensagem a ser enviada no corpo do e-mail. */
