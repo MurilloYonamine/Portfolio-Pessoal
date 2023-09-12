@@ -1,5 +1,9 @@
 {
     "framework": "node",
     "version": "16.14.0",
-    "buildCommand": "npm run build"
+    "buildCommand": "npm run build",
+    "startCommand": "npm start",
+    "env": {
+        "PORT": "3000"
+    }
 }
