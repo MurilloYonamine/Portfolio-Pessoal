@@ -12,27 +12,28 @@
         </div>
 
         <div class="col-lg-6 col-md-6 col-12 pt-4">
-            <form class="p-md-5 rounded-3" method="post" action="formulario.php">
+            <form class="p-md-5 rounded-3" method="POST" action="/enviar">
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInputNome" placeholder="usuario" name="nome">
-                    <label for="floatingInputNome" class="form-label">Insira um nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="usuario" name="nome">
+                    <label for="nome" class="form-label">Insira um nome:</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com"
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com"
                         name="email">
-                    <label for="floatingInputEmail" class="form-label">Insira um e-mail:</label>
+                    <label for="email" class="form-label">Insira um e-mail:</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" id="FormControlTextarea" placeholder="mensagem"
+                    <textarea class="form-control" id="mensagem" placeholder="mensagem"
                         name="mensagem"></textarea>
-                    <label for="FormControlTextarea" class="form-label">Insira sua mensagem:</label>
+                    <label for="mensagem" class="form-label">Insira sua mensagem:</label>
                 </div>
 
                 <button class="w-100 btn btn-lg btn-outline-warning" type="submit">Enviar</button>
             </form>
+
         </div>
     </div>
 </section>
