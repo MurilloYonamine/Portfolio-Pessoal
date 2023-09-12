@@ -6,11 +6,11 @@ const app = express();
 
 // Routes
 const homeRoutes = require("./routes/homeRoutes");
-const emailRoutes = require("./routes/emailRoutes");
+// const emailRoutes = require("./routes/emailRoutes");
 
 // Controller
 const HomeController = require("./controllers/HomeController");
-const EmailController = require("./controllers/EmailController");
+// const EmailController = require("./controllers/EmailController");
 
 // Template engine
 app.engine(
