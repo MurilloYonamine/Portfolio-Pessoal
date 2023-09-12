@@ -32,7 +32,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.sendFile('/views/layouts/main.handlebars', { root: path.join(__dirname, 'public') });
+    res.sendFile('index.html', { root: path.join(__dirname, 'public') });
 });
 
 //Routes
