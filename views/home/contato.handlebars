@@ -1,0 +1,38 @@
+<!-- Formulário de contato -->
+<section class="container py-5" id="contatos">
+    <div class="d-flex flex-column align-items-center col-lg-12 col-md-12 py-5">
+        <h2 class="h2 text-warning">Contatos</h2>
+        <p class="fs-5">Gostou do que viu? Entre em contato comigo!</p>
+    </div>
+
+    <div class="row d-flex justify-content-between flex-row-reverse">
+
+        <div class="col-lg-6 col-md-6 col-12">
+            <img src="img/penguins/mu penguiin.png" width="80%" class="d-none d-md-block rounded-5 " alt="imagem teste">
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-12 pt-4">
+            <form class="p-md-5 rounded-3" method="post" action="formulario.php">
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInputNome" placeholder="usuario" name="nome">
+                    <label for="floatingInputNome" class="form-label">Insira um nome:</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com"
+                        name="email">
+                    <label for="floatingInputEmail" class="form-label">Insira um e-mail:</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="FormControlTextarea" placeholder="mensagem"
+                        name="mensagem"></textarea>
+                    <label for="FormControlTextarea" class="form-label">Insira sua mensagem:</label>
+                </div>
+
+                <button class="w-100 btn btn-lg btn-outline-warning" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
