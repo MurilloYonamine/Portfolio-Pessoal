@@ -1,9 +1,15 @@
 {
-    "framework": "node",
     "version": 2,
-    "buildCommand": "npm run build",
-    "startCommand": "npm start",
-    "env": {
-        "PORT": "3000"
-    }
+    "builds": [
+        {
+            "src": "./index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*",
+            "dest": "/"
+        }
+    ]
 }
