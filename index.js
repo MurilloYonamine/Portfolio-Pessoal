@@ -18,6 +18,7 @@ app.engine(
     exphbs.engine({
         extname: "handlebars",
         defaultLayout: "layouts/main",
+        root: path.join(__dirname, 'public'),
         layoutsDir: path.join(__dirname, "views/"),
         partialsDir: [path.join(__dirname, "views/")],
     })
@@ -30,10 +31,6 @@ app.use(express.json());
 
 //public path
 app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-    res.sendFile('index.html', { root: path.join(__dirname, 'public') });
-});
 
 //Routes
 app.use("/", homeRoutes);
