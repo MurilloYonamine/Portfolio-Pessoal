@@ -31,6 +31,10 @@ app.use(express.json());
 //public path
 app.use(express.static('public'));
 
+app.get('/', (req, res) => {
+    res.sendFile('/views/layouts/main.handlebars', { root: path.join(__dirname, 'public') });
+});
+
 //Routes
 app.use("/", homeRoutes);
 // app.use("/", emailRoutes);
