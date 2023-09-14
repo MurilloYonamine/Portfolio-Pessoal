@@ -1,6 +1,6 @@
 # Portfolio Pessoal
 
-Este é o README para o meu portfólio pessoal, desenvolvido com Node.js, Express e Express Handlebars, seguindo a arquitetura MVC (Model-View-Controller) para uma organização eficiente do código. O objetivo deste documento é fornecer uma visão geral da estrutura do projeto e das tecnologias utilizadas.
+Portfólio desenvolvido com Node.js, Express e Express Handlebars, seguindo a arquitetura MVC (Model-View-Controller) para uma organização eficiente do código. O objetivo deste documento é fornecer uma visão geral da estrutura do projeto e das tecnologias utilizadas.
 
 ## Descrição
 
